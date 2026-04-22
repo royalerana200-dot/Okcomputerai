@@ -2,6 +2,8 @@
 OKComputer — Main Application Entry Point
 FastAPI backend with all routers mounted
 """
+import os
+os.makedirs("logs", exist_ok=True)
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
